@@ -15,7 +15,7 @@ export const Footer = () => {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900 text-sm">Free Express Shipping</h4>
-                <p className="text-xs text-gray-500">On all orders above $50</p>
+                <p className="text-xs text-gray-500">On all orders above BDT 50</p>
               </div>
             </div>
 

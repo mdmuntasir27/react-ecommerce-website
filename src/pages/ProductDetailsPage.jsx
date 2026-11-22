@@ -186,7 +186,7 @@ export const ProductDetailsPage = () => {
             {/* Price */}
             <div className="pt-2">
               <span className="text-3xl sm:text-4xl font-black text-gray-900">
-                ${Number(product.price).toFixed(2)}
+                BDT {Number(product.price).toFixed(2)}
               </span>
               <span className="text-xs text-emerald-600 ml-3 font-semibold bg-emerald-50 px-2.5 py-1 rounded-full">
                 In Stock & Ready to Ship

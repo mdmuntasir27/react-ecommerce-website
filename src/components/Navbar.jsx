@@ -27,6 +27,9 @@ export const Navbar = () => {
               <span className="hidden sm:inline-block ml-1.5 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest bg-indigo-50 text-indigo-700 rounded-full">
                 Shop
               </span>
+              <span className="hidden sm:inline-block ml-1 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest bg-emerald-50 text-emerald-700 rounded-full">
+                BDT
+              </span>
             </div>
           </Link>
 

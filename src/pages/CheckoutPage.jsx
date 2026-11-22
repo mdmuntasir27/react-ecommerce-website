@@ -103,7 +103,7 @@ export const CheckoutPage = () => {
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">Total Paid:</span>
-              <span className="font-bold text-indigo-600">${finalTotal.toFixed(2)}</span>
+              <span className="font-bold text-indigo-600">BDT {finalTotal.toFixed(2)}</span>
             </div>
           </div>
 
@@ -333,7 +333,7 @@ export const CheckoutPage = () => {
             ) : (
               <>
                 <ShieldCheck className="w-5 h-5" />
-                <span>Place Order (${finalTotal.toFixed(2)})</span>
+                <span>Place Order (BDT {finalTotal.toFixed(2)})</span>
               </>
             )}
           </button>
@@ -357,11 +357,11 @@ export const CheckoutPage = () => {
                 <div className="flex-1 min-w-0">
                   <p className="text-xs font-semibold text-gray-800 truncate">{item.title}</p>
                   <p className="text-xs text-gray-500">
-                    {item.quantity} × ${Number(item.price).toFixed(2)}
+                    {item.quantity} × BDT {Number(item.price).toFixed(2)}
                   </p>
                 </div>
                 <span className="text-xs font-bold text-gray-900">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  BDT {(item.price * item.quantity).toFixed(2)}
                 </span>
               </div>
             ))}
@@ -371,21 +371,21 @@ export const CheckoutPage = () => {
           <div className="space-y-2 text-sm text-gray-600 pt-2">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span className="font-semibold text-gray-900">${totalAmount.toFixed(2)}</span>
+              <span className="font-semibold text-gray-900">BDT {totalAmount.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
               <span className="font-semibold text-gray-900">
-                {shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}
+                {shipping === 0 ? 'FREE' : `BDT ${shipping.toFixed(2)}`}
               </span>
             </div>
             <div className="flex justify-between">
               <span>Estimated Tax (5%)</span>
-              <span className="font-semibold text-gray-900">${estimatedTax.toFixed(2)}</span>
+              <span className="font-semibold text-gray-900">BDT {estimatedTax.toFixed(2)}</span>
             </div>
             <div className="border-t border-gray-100 pt-3 flex justify-between text-base font-extrabold text-gray-900">
               <span>Total</span>
-              <span className="text-xl text-indigo-600">${finalTotal.toFixed(2)}</span>
+              <span className="text-xl text-indigo-600">BDT {finalTotal.toFixed(2)}</span>
             </div>
           </div>
         </div>

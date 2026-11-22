@@ -95,7 +95,7 @@ export const WishlistPage = () => {
               </Link>
               <div className="mt-auto pt-3 border-t border-gray-50 flex items-center justify-between">
                 <span className="text-lg font-bold text-gray-900">
-                  ${Number(item.price).toFixed(2)}
+                  BDT {Number(item.price).toFixed(2)}
                 </span>
                 <button
                   onClick={() => handleAddToCart(item)}

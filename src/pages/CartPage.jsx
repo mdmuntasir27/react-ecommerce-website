@@ -186,7 +186,7 @@ export const CartPage = () => {
                     {item.title}
                   </Link>
                   <p className="text-sm text-gray-500">
-                    Unit Price: <span className="font-semibold text-gray-700">${Number(item.price).toFixed(2)}</span>
+                    Unit Price: <span className="font-semibold text-gray-700">BDT {Number(item.price).toFixed(2)}</span>
                   </p>
                 </div>
 
@@ -215,7 +215,7 @@ export const CartPage = () => {
                 <div className="text-right sm:min-w-[100px]">
                   <span className="text-xs text-gray-400 block sm:hidden">Total:</span>
                   <span className="text-base sm:text-lg font-bold text-gray-900">
-                    ${itemSubtotal.toFixed(2)}
+                    BDT {itemSubtotal.toFixed(2)}
                   </span>
                 </div>
 
@@ -251,7 +251,7 @@ export const CartPage = () => {
           <div className="space-y-3 text-sm text-gray-600">
             <div className="flex justify-between">
               <span>Subtotal ({totalQuantity} items)</span>
-              <span className="font-semibold text-gray-900">${totalAmount.toFixed(2)}</span>
+              <span className="font-semibold text-gray-900">BDT {totalAmount.toFixed(2)}</span>
             </div>
 
             <div className="flex justify-between items-center">
@@ -264,18 +264,18 @@ export const CartPage = () => {
                 )}
               </div>
               <span className="font-semibold text-gray-900">
-                {shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}
+                {shipping === 0 ? 'FREE' : `BDT ${shipping.toFixed(2)}`}
               </span>
             </div>
 
             <div className="flex justify-between">
               <span>Estimated Tax (5%)</span>
-              <span className="font-semibold text-gray-900">${estimatedTax.toFixed(2)}</span>
+              <span className="font-semibold text-gray-900">BDT {estimatedTax.toFixed(2)}</span>
             </div>
 
             <div className="border-t border-gray-100 pt-3 flex justify-between text-base font-extrabold text-gray-900">
               <span>Total Price</span>
-              <span className="text-xl text-indigo-600">${finalTotal.toFixed(2)}</span>
+              <span className="text-xl text-indigo-600">BDT {finalTotal.toFixed(2)}</span>
             </div>
           </div>
 
@@ -296,7 +296,7 @@ export const CartPage = () => {
             </div>
             <div className="flex items-center gap-2">
               <Truck className="w-4 h-4 text-indigo-600" />
-              <span>Free delivery on orders over $50</span>
+              <span>Free delivery on orders over BDT 50</span>
             </div>
           </div>
         </div>
